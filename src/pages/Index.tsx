@@ -3,10 +3,14 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Loader2, AlertCircle, Music } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import Navbar from '@/components/Navbar';
+import DynamicIslandNavbar from '@/components/DynamicIslandNavbar';
 import Hero from '@/components/Hero';
 import LyricsCard from '@/components/LyricsCard';
 import LyricsModal from '@/components/LyricsModal';
+import FeaturedSection from '@/components/FeaturedSection';
+import RecentSection from '@/components/RecentSection';
+import GenreSection from '@/components/GenreSection';
+import ArtistSpotlight from '@/components/ArtistSpotlight';
 import { getAllLyrics, downloadLyric, searchLyrics, type Lyric } from '@/services/api';
 
 // Register GSAP plugins
@@ -110,18 +114,24 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-hero">
-      <Navbar onSearch={handleSearch} searchQuery={searchQuery} />
+      <DynamicIslandNavbar onSearch={handleSearch} searchQuery={searchQuery} />
       
       <Hero />
+      
+      {/* Additional Sections */}
+      <FeaturedSection onViewLyric={handleViewLyric} onDownload={handleDownload} />
+      <RecentSection onViewLyric={handleViewLyric} onDownload={handleDownload} />
+      <GenreSection />
+      <ArtistSpotlight />
 
-      {/* Lyrics Section */}
+      {/* All Lyrics Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold gradient-text mb-4">
-            Discover Amazing Lyrics
+            All Lyrics
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore our collection of beautiful songs from talented artists around the world
+            Browse through our complete collection of lyrics
           </p>
         </div>
 
