@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    /* Dark space theme background */
-    --background: 240 10% 3.9%;
+    /* Pure dark theme background */
+    --background: 0 0% 5%;
     --foreground: 0 0% 98%;
 
     /* Glassmorphism cards */
-    --card: 240 10% 3.9%;
+    --card: 0 0% 8%;
     --card-foreground: 0 0% 98%;
-    --glass: 240 10% 3.9% / 0.4;
-    --glass-border: 180 100% 60% / 0.2;
+    --glass: 0 0% 5% / 0.4;
+    --glass-border: 162 100% 60% / 0.2;
 
-    --popover: 240 10% 3.9%;
+    --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
     /* Primary teal theme (#36ffbf) */
     --primary: 162 100% 60%;
     --primary-glow: 162 100% 75%;
     --primary-dark: 162 100% 45%;
-    --primary-foreground: 240 10% 3.9%;
+    --primary-foreground: 0 0% 5%;
 
     /* Secondary with glassmorphism */
-    --secondary: 240 5% 15%;
+    --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 98%;
 
     /* Muted glassmorphism */
-    --muted: 240 5% 15%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
     /* Accent teal variants */
     --accent: 162 100% 60%;
-    --accent-foreground: 240 10% 3.9%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     /* Glassmorphism borders */
-    --border: 240 5% 15%;
-    --input: 240 5% 15%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
     --ring: 162 100% 60%;
 
     --radius: 1rem;
@@ -50,8 +50,8 @@
     /* Custom gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
-    --gradient-glass: linear-gradient(135deg, hsl(var(--glass)), hsl(240 10% 5% / 0.6));
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(162 50% 10%) 50%, hsl(240 10% 3.9%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(var(--glass)), hsl(0 0% 3% / 0.6));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 3%) 0%, hsl(0 0% 8%) 50%, hsl(0 0% 5%) 100%);
 
     /* Glassmorphism shadows */
     --shadow-glass: 0 8px 32px 0 hsl(var(--primary) / 0.1);

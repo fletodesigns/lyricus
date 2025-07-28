@@ -102,6 +102,9 @@ const RecentSection: React.FC<RecentSectionProps> = ({ onViewLyric, onDownload }
     <section ref={sectionRef} className="py-20 bg-gradient-to-r from-background/50 to-background/30 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+      <div className="absolute top-12 left-12 w-48 h-48 bg-primary/8 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-12 right-12 w-56 h-56 bg-primary-glow/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-primary-dark/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="section-content">

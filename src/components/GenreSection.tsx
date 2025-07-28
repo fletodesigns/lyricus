@@ -73,6 +73,11 @@ const GenreSection: React.FC = () => {
         <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary-glow rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 right-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-ping" style={{ animationDelay: '4s' }}></div>
       </div>
+      
+      {/* Blurry Background Elements */}
+      <div className="absolute top-16 right-16 w-64 h-64 bg-primary/6 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-16 left-16 w-72 h-72 bg-primary-glow/6 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute top-1/3 left-1/3 w-40 h-40 bg-primary-dark/8 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="section-title text-center mb-12">

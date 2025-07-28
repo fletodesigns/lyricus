@@ -102,8 +102,11 @@ const FeaturedSection: React.FC<FeaturedSectionProps> = ({ onViewLyric, onDownlo
   return (
     <section ref={sectionRef} className="py-20 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-10 left-10 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute top-10 right-10 w-64 h-64 bg-primary/8 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-10 left-10 w-80 h-80 bg-primary-glow/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-primary/6 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute bottom-1/3 left-1/3 w-56 h-56 bg-primary-dark/7 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+      <div className="absolute top-20 left-1/2 w-72 h-72 bg-primary-glow/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
       <div className="container mx-auto px-4">
         <div className="section-title text-center mb-12">
