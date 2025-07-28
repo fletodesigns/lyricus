@@ -9,6 +9,7 @@ import AddLyrics from "./pages/AddLyrics";
 import About from "./pages/About";
 import Artists from "./pages/Artists";
 import Trending from "./pages/Trending";
+import Search from "./pages/Search";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -22,6 +23,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/browse" element={<Browse />} />
           <Route path="/add" element={<AddLyrics />} />
           <Route path="/about" element={<About />} />

@@ -116,7 +116,7 @@ const ArtistSpotlight: React.FC = () => {
   }
 
   return (
-    <section ref={sectionRef} className="py-20 bg-gradient-to-l from-background/60 to-background/40 relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary-glow/8 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-primary/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>

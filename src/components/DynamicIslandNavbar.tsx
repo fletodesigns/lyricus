@@ -28,6 +28,7 @@ const DynamicIslandNavbar: React.FC<DynamicIslandNavbarProps> = ({
   const menuRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
+    { path: '/search', icon: Search, label: 'Search' },
     { path: '/', icon: Home, label: 'Home' },
     { path: '/browse', icon: Library, label: 'Browse' },
     { path: '/trending', icon: TrendingUp, label: 'Trending' },
